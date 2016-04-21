@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function addNode() {
+            var newP = document.createElement("p");
+            var textNode = document.createTextNode(" I'm a new text node");
+            newP.appendChild(textNode);
+            document.getElementById("target").appendChild(newP);
+            var diva = document.createTextNode("mymy");
+            document.getElementById("coffe").appendChild(diva);
+        }
+    </script>
+</head>
+<body onload="addNode();">
+<p id="target">start here<p>
+<div id="coffe"></div>
+</body>
+</html>
